@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F48A6ECC-97B0-5CD8-9F56-BEA5978AC3D2" name="VUELO">
+<createdBy>Usuario 1</createdBy>
+<createdTime>2026-01-11 16:26:14 UTC</createdTime>
+<ownerDesignName>Semana1CasoAerolinea</ownerDesignName>
+<engineerTo>
+<item key="843873E3-0733-9788-4B88-E2B3B72962C8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="numero_vuelo" id="4BDF78FD-07B0-63ED-C67C-21263AC6D2BE">
+<createdBy>Usuario 1</createdBy>
+<createdTime>2026-01-11 18:09:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Codigo unico del vuelo (ej: BRA123)]]></commentInRDBMS>
+<ownerDesignName>Semana1CasoAerolinea</ownerDesignName>
+<engineerTo>
+<item key="843873E3-0733-9788-4B88-E2B3B72962C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_despegue" id="0F83BB66-9C7D-97AD-AAF6-2ACEDBC2BB4F">
+<createdBy>Usuario 1</createdBy>
+<createdTime>2026-01-11 18:22:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fecha y hora de salida ]]></commentInRDBMS>
+<ownerDesignName>Semana1CasoAerolinea</ownerDesignName>
+<engineerTo>
+<item key="843873E3-0733-9788-4B88-E2B3B72962C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_llegada" id="7C0994B5-343D-8A71-8C80-83146F48D2BA">
+<createdBy>Usuario 1</createdBy>
+<createdTime>2026-01-11 18:26:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fecha y hora estimada de llegada.]]></commentInRDBMS>
+<ownerDesignName>Semana1CasoAerolinea</ownerDesignName>
+<engineerTo>
+<item key="843873E3-0733-9788-4B88-E2B3B72962C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hora_salida" id="82DAB03F-6326-5563-007F-305BC2CAC05C">
+<createdBy>Usuario 1</createdBy>
+<createdTime>2026-01-11 18:31:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Hora de salida (formato HH:MM)]]></commentInRDBMS>
+<ownerDesignName>Semana1CasoAerolinea</ownerDesignName>
+<engineerTo>
+<item key="843873E3-0733-9788-4B88-E2B3B72962C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="054FD7AC-9519-59DF-8A07-E1302311B702" name="VUELO PK">
+<createdBy>Usuario 1</createdBy>
+<createdTime>2026-01-11 18:16:13 UTC</createdTime>
+<ownerDesignName>Semana1CasoAerolinea</ownerDesignName>
+<engineerTo>
+<item key="843873E3-0733-9788-4B88-E2B3B72962C8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4BDF78FD-07B0-63ED-C67C-21263AC6D2BE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
